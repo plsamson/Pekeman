@@ -1,0 +1,5 @@
+Pikachu,MF,Electrique,0.4 m,6.0 kg,I à VII,pikachuFront,pikachuBack,190,35,30,50,55,Choc de tonnerre
+Snorlax,M,Normal,2.1 m,460.0 kg,I à VII,snorlaxFront,snorlaxBack,25,160,65,65,110,Charge
+Charmander,M,Feu,0.6 m,8.5 kg,I à VII,charmanderFront,charmanderBack,45,39,43,60,52,Braise
+Squirtle,M,Eau,0.5 m,9.0 kg,I à VII,squirtleFront,squirtleBack,45,44,65,50,48,Pistolet à eau
+Bulbasaur,M,Herbe et poison,0.7 m,6.9 kg,I à VII,bulbasaurFront,bulbasaurFront,45,45,49,65,49,Fouet lianes

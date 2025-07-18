@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF231D41-C715-4E80-B162-42D76F7AE798}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pekeman</RootNamespace>
+    <AssemblyName>Pekeman</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Load\CustomFont.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Character.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Character.Designer.cs">
+      <DependentUpon>Character.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Dpad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Dpad.Designer.cs">
+      <DependentUpon>Dpad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Gym.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Gym.Designer.cs">
+      <DependentUpon>Gym.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Combat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Combat.Designer.cs">
+      <DependentUpon>Combat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Load\LoadPekeman.cs" />
+    <Compile Include="UI\Control\Pekedex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Pekedex.Designer.cs">
+      <DependentUpon>Pekedex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunGame.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Load\LoadMap.cs" />
+    <Compile Include="Load\TilesetImageGenerator.cs" />
+    <Compile Include="UI\Control\Pokecenter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Pokecenter.Designer.cs">
+      <DependentUpon>Pokecenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\WorldMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\WorldMap.Designer.cs">
+      <DependentUpon>WorldMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\FormPekeman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\FormPekeman.Designer.cs">
+      <DependentUpon>FormPekeman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Loss.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Loss.Designer.cs">
+      <DependentUpon>Loss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Control\Victory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Control\Victory.Designer.cs">
+      <DependentUpon>Victory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\Control\Character.resx">
+      <DependentUpon>Character.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Dpad.resx">
+      <DependentUpon>Dpad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Gym.resx">
+      <DependentUpon>Gym.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Combat.resx">
+      <DependentUpon>Combat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Pekedex.resx">
+      <DependentUpon>Pekedex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Pokecenter.resx">
+      <DependentUpon>Pokecenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\WorldMap.resx">
+      <DependentUpon>WorldMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\FormPekeman.resx">
+      <DependentUpon>FormPekeman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Loss.resx">
+      <DependentUpon>Loss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Control\Victory.resx">
+      <DependentUpon>Victory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pekeman\bulbasaurAtk.gif" />
+    <None Include="Resources\Pekeman\bulbasaurBack.gif" />
+    <None Include="Resources\Pekeman\charmanderAtk.gif" />
+    <None Include="Resources\Pekeman\charmanderBack.gif" />
+    <None Include="Resources\Pekeman\charmanderFront.gif" />
+    <None Include="Resources\Pekeman\pikachuAtk.gif" />
+    <None Include="Resources\Pekeman\pikachuFront.gif" />
+    <None Include="Resources\Pekeman\snorlaxBack.gif" />
+    <None Include="Resources\Pekeman\snorlaxFront.gif" />
+    <None Include="Resources\Pekeman\SquirtleAtk.gif" />
+    <None Include="Resources\Pekeman\squirtleBack.gif" />
+    <None Include="Resources\Pekeman\squirtleFront.gif" />
+    <None Include="Resources\Pekedex\F.png" />
+    <None Include="Resources\Pekedex\M.png" />
+    <None Include="Resources\Pekedex\MF.png" />
+    <None Include="Resources\btn\btnClose.png" />
+    <None Include="Resources\btn\btnPekedex.png" />
+    <None Include="Resources\Backgrounds\menu1.gif" />
+    <None Include="Resources\btn\btnMenu.png" />
+    <None Include="Resources\Backgrounds\pekemanLogo.png" />
+    <None Include="Resources\btn\btnRun.png" />
+    <None Include="Resources\btn\btnAtk.png" />
+    <None Include="Resources\btn\btnCatch.png" />
+    <None Include="Resources\Backgrounds\combatBackgroundEnemy.png" />
+    <None Include="Resources\Backgrounds\combatBackgroundPlayer.png" />
+    <None Include="Resources\Backgrounds\combatActionBackground.png" />
+    <None Include="Resources\Backgrounds\combatBackground.gif" />
+    <None Include="Resources\btn\dpad.png" />
+    <None Include="Resources\Backgrounds\gym.png" />
+    <None Include="Resources\Backgrounds\healer.png" />
+    <None Include="Resources\mewtwo.gif" />
+    <None Include="Resources\Character\bas2.gif" />
+    <None Include="Resources\Character\bas3.gif" />
+    <None Include="Resources\Character\droite1.gif" />
+    <None Include="Resources\Character\droite2.gif" />
+    <None Include="Resources\Character\gauche1.gif" />
+    <None Include="Resources\Character\gauche2.gif" />
+    <None Include="Resources\Character\haut1.gif" />
+    <None Include="Resources\Character\haut2.gif" />
+    <None Include="Resources\Character\haut3.gif" />
+    <Content Include="Resources\PixelFont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tileset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pekeman.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Character\bas1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pekedex\pekedex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pekedex\atkname_health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pekeman\bulbasaurFront.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pekeman\pikachuBack.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

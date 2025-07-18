@@ -1,0 +1,24 @@
+# Build directories
+**/bin/
+**/obj/
+
+# VS hosting process and debug symbols
+*.vshost.*
+*.pdb
+
+# User-specific files
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# Visual Studio workspace
+/.vs/
+
+# NuGet packages (if you committed them)
+/packages/
+/package-lock.json
+
+.idea/
+*.sln.iml
+.DS_Store
