@@ -1,8 +1,9 @@
 # Build directories
 **/bin/
 **/obj/
+*.cache
 
-# VS hosting process and debug symbols
+# VS hosting process and debug
 *.vshost.*
 *.pdb
 
@@ -14,10 +15,7 @@
 
 # Visual Studio workspace
 /.vs/
-
-# NuGet packages (if you committed them)
-/packages/
-/package-lock.json
+.vscode/
 
 .idea/
 *.sln.iml
