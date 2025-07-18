@@ -19,7 +19,7 @@
 
 - **Windows 10 ou 11** (x64 ou ARM64)
 - Runtime [.NET Framework 4.5.2](https://dotnet.microsoft.com/download/dotnet-framework/net452)
-- Visual Studio Community (pour compiler) _ou_ l’exécutable compilé pour jouer en mode autonome
+- Visual Studio Community (pour compiler) _ou_ l’exécutable compilé
 
 ---
 
@@ -30,10 +30,12 @@
    `git clone https://github.com/plsamson/pekeman.git`
 
 2. **Compilation (optionnel)**
-   • Ouvrir Pekeman.sln dans Visual Studio
-   • Vérifier que la configuration Debug (ou Release) est sélectionnée
-   • Appuyer sur Ctrl + Shift + B
+
+   - Ouvrir Pekeman.sln dans Visual Studio
+   - Vérifier que la configuration Debug (ou Release) est sélectionnée
+   - Appuyer sur Ctrl + Shift + B
 
 3. **Lancement**
-   • Depuis l’IDE : appuyer sur F5
-   • Mode autonome : double-cliquer sur Pekeman.exe
+
+   - Depuis l’IDE : appuyer sur F5
+   - Mode autonome : double-cliquer sur Pekeman.exe
